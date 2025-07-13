@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مركز أثر الخالدين للأبحاث العلمية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>مركز أثر الخالدين للأبحاث العلمية</h1>
+    <button id="editModeBtn">نمط التحرير</button>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>عن المركز</h2>
+      <p>مرحبًا بكم في مركز أثر الخالدين للأبحاث العلمية. نحن نسعى لتمكين البحث العلمي في مجالات متعددة.</p>
+    </section>
+
+    <section id="teams">
+      <h2>فريقنا</h2>
+      <div class="team" onclick="showTeam('scientific')">فريق البحث العلمي</div>
+      <div class="team" onclick="showTeam('international')">فريق البحث الدولي</div>
+      <div class="team" onclick="showTeam('tech')">فريق الإعلام والتكنولوجيا</div>
+      <div class="team" onclick="showTeam('social')">فريق البحث الاجتماعي</div>
+      <div class="team" onclick="showTeam('events')">فريق المسرحيات والفعاليات</div>
+      <div id="teamDisplay" class="hidden"></div>
+    </section>
+
+    <section id="ai">
+      <h2>ذكاء المتفوقين</h2>
+      <p>نظام ذكاء اصطناعي متطور جدًا جدًا جدًا لخدمة البحث العلمي.</p>
+    </section>
+
+    <section id="videos">
+      <h2>احنا نشرحلك</h2>
+      <div id="videoList"></div>
+    </section>
+
+    <section id="contact">
+      <h2>تواصل معنا</h2>
+      <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea placeholder="رسالتك" required></textarea>
+        <button type="submit">إرسال</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
